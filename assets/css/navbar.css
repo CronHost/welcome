@@ -1,0 +1,200 @@
+/* Secure Heberg - Tous droits Reservés*/
+
+/*================================================
+                    Navbar CSS
+=================================================*/
+
+.startp-responsive-nav {
+  display: none;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  background-color: transparent;
+  padding: 15px 0px;
+  color: white;
+  transition: 0.5s all ease;
+}
+
+.startp-nav nav {
+  padding: 0;
+}
+
+.startp-nav nav ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.startp-nav nav .navbar-nav .nav-item {
+  position: relative;
+  padding: 15px 0;
+}
+
+.startp-nav nav .navbar-nav .nav-item a {
+  font-weight: 500;
+  font-size: 17px;
+  color: #ffff;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-left: 14px;
+  margin-right: 14px;
+}
+
+
+.startp-nav nav .navbar-nav .nav-item a:hover, .startp-nav nav .navbar-nav .nav-item a:focus, .startp-nav nav .navbar-nav .nav-item a.active {
+  color: #B2B2B2;
+  cursor: default;
+}
+
+.startp-nav nav .navbar-nav .nav-item a svg {
+  width: 14px;
+}
+
+/* Dropdown Menu */
+
+.startp-nav nav .navbar-nav .nav-item .dropdown_menu {
+  -webkit-box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.05);
+  background: #ffffff;
+  position: absolute;
+  top: 150px;
+  left: 0;
+  width: 250px;
+  z-index: 99;
+  padding-top: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 20px;
+  opacity: 0;
+  border-radius: 5px;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.startp-nav nav .navbar-nav .nav-item .dropdown_menu li {
+  position: relative;
+  padding: 0;
+}
+
+.startp-nav nav .navbar-nav .nav-item .dropdown_menu li a {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 9px 15px;
+  margin: 0;
+  display: block;
+  color: #8a4a4a;
+}
+
+.startp-nav nav .navbar-nav .nav-item .dropdown_menu li a:hover, .startp-nav nav .navbar-nav .nav-item .dropdown_menu li a:focus, .startp-nav nav .navbar-nav .nav-item .dropdown_menu li a.active {
+  color: #B2B2B2;
+}
+
+.startp-nav nav .navbar-nav .nav-item .dropdown_menu li .dropdown_menu {
+  position: absolute;
+  left: 220px;
+  top: 0;
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
+/* Secure Heberg - Tous droits Reservés*/
+
+.startp-nav nav .navbar-nav .nav-item .dropdown_menu li .dropdown_menu li a {
+  color: #8a4a4a;
+}
+
+.startp-nav nav .navbar-nav .nav-item .dropdown_menu li .dropdown_menu li a:hover, .startp-nav nav .navbar-nav .nav-item .dropdown_menu li .dropdown_menu li a:focus, .startp-nav nav .navbar-nav .nav-item .dropdown_menu li .dropdown_menu li a.active {
+  color: #B2B2B2;
+}
+
+.startp-nav nav .navbar-nav .nav-item .dropdown_menu li:hover .dropdown_menu {
+  opacity: 1 !important;
+  visibility: visible !important;
+  top: -10px !important;
+}
+
+.startp-nav nav .navbar-nav .nav-item .dropdown_menu li:hover a {
+  color: #B2B2B2;
+}
+
+.startp-nav nav .navbar-nav .nav-item:hover ul {
+  opacity: 1;
+  visibility: visible;
+  top: 150%;
+}
+
+/* On Navbar Scroll */
+
+.scrolled {
+  min-height: 10px;
+  transition: 0.35s all ease;
+  background-color: var(--cloudfive4);
+  transition: 0.6s;
+  border-bottom: 3px solid var(--cloudfive);
+}
+
+svg {
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+.navbar .icon {
+  display: none;
+  color: white;
+  font-size: 35px;
+
+  padding: 15px 0;
+}
+
+@media screen and (max-width: 991px) {
+
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+
+  .navbar .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .startp-nav .mean-menu {
+    display: none!important;
+  }
+
+  .startp-nav .responsive .mean-menu {
+    display: block!important;
+    align-items: normal;
+  }
+  .startp-nav .responsive .mean-menu .navbar-nav .nav-item a{
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+  }
+
+  .startp-nav nav {
+    display: block;
+  }
+
+  .startp-nav .nav {
+    display: block;
+    margin: 0px;
+  }
+
+  .startp-nav .ml-auto {
+    margin: 0px!important;
+  }
+
+  .header {
+    background-color: var(--cloudfive4);
+    border-bottom: var(--cloudfive);
+  }
+}
